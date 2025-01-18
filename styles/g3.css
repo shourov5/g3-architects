@@ -6,34 +6,76 @@
     font-weight: 400;
     font-style: normal;
   }
-
+ /* shared style*/
 .display-flex{
     display: flex;
   }
-.bg-light{
-    background: rgba(255, 144, 14, 0.1);
-}
- /* shared style*/
 
-.navbar{
-    justify-content: space-between;
-    align-items: center;
+.btn-primary{
+    color: white;
+    border-radius: 8px;
+    padding: 17px 22px;
+    font-size: 1.00rem;
+    border: none;
+    background: rgb(255, 144, 14);
 }
-.brand{
-    font-size: 3rem;
-    font-size: 45px;
-font-weight: 700;
-}
-.nav-item{
-    list-style: none;
-}
-.nav-links{
-    margin-right: 30px;
-    font-size: 18px;
-font-weight: 500;
-    color: rgb(66, 66, 66);
-    text-decoration: none;
-}
-.navbar .banner{
+main{
+    max-width: 1100px;
     margin: 0 auto;
 }
+/* dark 02*/
+.text-gray{
+    color: #424242;
+}
+/* dark 03*/
+.text-light-gray{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+ .navbar{
+    justify-content: space-between;
+    align-items: center;
+ }
+ .brand{
+    font-size: 3rem;
+    font-weight: 700;
+ }
+ .nav-item{
+    list-style: none;
+    margin-right: 40px;
+ }
+ .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+ }
+
+ .navbar, .banner{
+    max-width: 1100px;
+    margin: 0 auto;
+ }
+  /* banner style*/
+ .banner-description{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+
+ .banner-title{
+    font-size: 4rem;
+font-weight: 700;
+ }
+
+ .banner-image{
+    width: 100%;
+ }
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+}
+/*team style*/
+
+
